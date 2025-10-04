@@ -2,32 +2,32 @@
 <flowgorithm fileversion="4.2">
     <attributes>
         <attribute name="name" value="T00"/>
-        <attribute name="authors" value="RIVALDO SIAGIAN"/>
+        <attribute name="authors" value="pc"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 02:02:47 PM"/>
-        <attribute name="created" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTowOTo0MCBQTTszMjY4"/>
-        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMjowMjo0NyBQTTs1OzMzODE="/>
+        <attribute name="saved" value="2025-10-03 02:40:36 PM"/>
+        <attribute name="created" value="cGM7TEFQVE9QLUU3RzNCVU5FOzIwMjUtMTAtMDM7MDI6MDk6MDUgUE07MjUzNw=="/>
+        <attribute name="edited" value="cGM7TEFQVE9QLUU3RzNCVU5FOzIwMjUtMTAtMDM7MDI6NDA6MzYgUE07MjsyNjQ1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="x, y, hasilpenjumlahan, hasilperkalian" type="Integer" array="False" size=""/>
+            <declare name="x, y, HasilPenjumlahan, HasilPerkalian" type="Integer" array="False" size=""/>
             <input variable="x"/>
             <input variable="y"/>
-            <if expression="x MOD 2 = 0">
+            <if expression="x MOD  2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan pertama: Genap &quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama: Ganjil &quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="y MOD 2 = 0">
                 <then>
-                    <output expression="&quot;Bilangan kedua: Genap &quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua: Ganjil &quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="x&gt;y">
@@ -45,16 +45,16 @@
                     </if>
                 </else>
             </if>
-            <if expression="(x MOD 2 = 0)&amp;&amp;(y MOD 2 = 0)">
+            <if expression="(x MOD 2=0)&amp;&amp;(y MOD 2=0)">
                 <then>
-                    <assign variable="hasilpenjumlahan" expression="x+y"/>
-                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;hasilpenjumlahan" newline="True"/>
+                    <assign variable="HasilPenjumlahan" expression="x+y"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;HasilPenjumlahan" newline="True"/>
                 </then>
                 <else>
-                    <if expression="(x MOD 2 != 0 )&amp;&amp;(y MOD 2 != 0)">
+                    <if expression="(x MOD 2 != 0)&amp;&amp;(y MOD 2 != 0)">
                         <then>
-                            <assign variable="hasilperkalian" expression="x*y"/>
-                            <output expression="&quot;Hasil perkalian: &quot;&amp;hasilperkalian" newline="True"/>
+                            <assign variable="HasilPerkalian" expression="x*y"/>
+                            <output expression="&quot;Hasil perkalian: &quot;&amp;HasilPerkalian" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>

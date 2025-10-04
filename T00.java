@@ -3,23 +3,23 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class Program {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int x, y, hasilpenjumlahan, hasilperkalian;
+        int x, y, hasilPenjumlahan, hasilPerkalian;
 
-        x = Integer.parseInt(input.nextLine());
-        y = Integer.parseInt(input.nextLine());
+        x = input.nextInt();
+        y = input.nextInt();
         if (x % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap ");
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println("Bilangan pertama: Ganjil ");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (y % 2 == 0) {
-            System.out.println("Bilangan kedua: Genap ");
+            System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println("Bilangan kedua: Ganjil ");
+            System.out.println("Bilangan kedua: Ganjil");
         }
         if (x > y) {
             System.out.println("Bilangan pertama lebih besar");
@@ -31,12 +31,12 @@ public class T00 {
             }
         }
         if (x % 2 == 0 && y % 2 == 0) {
-            hasilpenjumlahan = x + y;
-            System.out.println("Hasil penjumlahan: " + hasilpenjumlahan);
+            hasilPenjumlahan = x + y;
+            System.out.println("Hasil penjumlahan: " + hasilPenjumlahan);
         } else {
             if (x % 2 != 0 && y % 2 != 0) {
-                hasilperkalian = x * y;
-                System.out.println("Hasil perkalian: " + hasilperkalian);
+                hasilPerkalian = x * y;
+                System.out.println("Hasil perkalian: " + hasilPerkalian);
             } else {
                 System.out.println("Berbeda jenis");
             }

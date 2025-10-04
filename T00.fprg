@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T00"/>
+        <attribute name="authors" value="RIVALDO SIAGIAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-04 02:02:47 PM"/>
+        <attribute name="created" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMTowOTo0MCBQTTszMjY4"/>
+        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMC0wNDswMjowMjo0NyBQTTs1OzMzODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, hasilpenjumlahan, hasilperkalian" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x MOD 2 = 0">
+                <then>
+                    <output expression="&quot;Bilangan pertama: Genap &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan pertama: Ganjil &quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="y MOD 2 = 0">
+                <then>
+                    <output expression="&quot;Bilangan kedua: Genap &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan kedua: Ganjil &quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="x&gt;y">
+                <then>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="y&gt;x">
+                        <then>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="(x MOD 2 = 0)&amp;&amp;(y MOD 2 = 0)">
+                <then>
+                    <assign variable="hasilpenjumlahan" expression="x+y"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;hasilpenjumlahan" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(x MOD 2 != 0 )&amp;&amp;(y MOD 2 != 0)">
+                        <then>
+                            <assign variable="hasilperkalian" expression="x*y"/>
+                            <output expression="&quot;Hasil perkalian: &quot;&amp;hasilperkalian" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

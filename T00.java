@@ -3,14 +3,14 @@
 import java.util.*;
 import java.lang.Math;
 
-public class Program {
+public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         int x, y, hasilPenjumlahan, hasilPerkalian;
 
-        x = input.nextInt();
-        y = input.nextInt();
+        x = Integer.parseInt(input.nextLine());
+        y = Integer.parseInt(input.nextLine());
         if (x % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
